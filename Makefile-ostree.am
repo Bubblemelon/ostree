@@ -37,6 +37,7 @@ ostree_SOURCES = src/ostree/main.c \
 	src/ostree/ot-builtin-gpg-sign.c \
 	src/ostree/ot-builtin-init.c \
 	src/ostree/ot-builtin-pull-local.c \
+	src/ostree/ot-builtin-ref-exist.c \
 	src/ostree/ot-builtin-log.c \
 	src/ostree/ot-builtin-ls.c \
 	src/ostree/ot-builtin-prune.c \

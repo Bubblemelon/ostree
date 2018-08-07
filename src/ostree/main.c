@@ -90,6 +90,10 @@ static OstreeCommand commands[] = {
   { "pull-local", OSTREE_BUILTIN_FLAG_NONE,
     ostree_builtin_pull_local,
     "Copy data from SRC_REPO" },
+  { "ref-exist",               // The name of the command
+   OSTREE_BUILTIN_FLAG_NONE,  // Flag not to require the `--repo` argument, see "ot-main.h"
+   ostree_builtin_ref_exist,  // Execution function for the command
+   "show if ref exists" },      // Short description to appear when `ostree hello-ostree --help` is entered
 #ifdef HAVE_LIBCURL_OR_LIBSOUP
   { "pull", OSTREE_BUILTIN_FLAG_NONE,
     ostree_builtin_pull,
